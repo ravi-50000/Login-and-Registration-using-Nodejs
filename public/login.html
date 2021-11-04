@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            padding:20px;
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            box-shadow: 1px 1px 5px grey;
+            width: fit-content;
+            height: fit-content;
+            align-items: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #input_box{
+            padding: 5px;
+            border-radius: 5px;
+            border-color: grey;
+            margin: 10px;
+            font-size: 15px;
+        }
+        #input_button {
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" method="post" action='/loginUser'>
+        <h3>LOGIN Details</h3>
+        <input type="email" name="email" id="input_box" placeholder="Email">
+        <input type="password" name="password" id="input_box" placeholder="Password">
+        <button type="submit" id="input_button">Submit</button>
+    </form>
+</body>
+</html>

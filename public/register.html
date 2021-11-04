@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .form{
+            padding:30px;
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            box-shadow: 1px 1px 5px grey;
+            width: fit-content;
+            height: fit-content;
+            align-items: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #input_box{
+            padding: 10px;
+            border-radius: 10px;
+            border-color: grey;
+            margin: 10px;
+            font-size: 15px;
+        }
+        #input_button {
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" method="POST" action="/registered">
+        <h3>Register Details</h3>
+        <input type="email" name="user_email" id="input_box" placeholder="Email">
+        <input type="password" name="user_password" id="input_box" placeholder="Password">
+        <br>
+        <button type="submit" id="input_button">Submit</button>
+    </form>
+</body>
+</html>
